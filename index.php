@@ -19,17 +19,11 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="assets/asset.glb"
+                    src="quesillox.glb"
                 ></a-asset-item>
             </a-assets>
 
-                <a-entity
-                    look-at="[gps-camera]"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    scale="0.5036440010873533 0.5036440010873533 0.5036440010873533"
-                    gps-entity-place="latitude: 17.265134954260667; longitude: -97.67795490062225;"
-                ></a-entity>
+                
                 <a-entity
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
