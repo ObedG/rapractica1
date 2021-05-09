@@ -19,7 +19,7 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="quesillox.glb"
+                    src="assets/quesillox.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -30,7 +30,13 @@
                     scale="0.5036440010873533 0.5036440010873533 0.5036440010873533"
                     gps-entity-place="latitude: 17.265134954260667; longitude: -97.67795490062225;"
                 ></a-entity>
-                
+                <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    scale="0.5036440010873533 0.5036440010873533 0.5036440010873533"
+                    gps-entity-place="latitude: 17.932767; longitude: -97.960991;"
+                ></a-entity>
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
