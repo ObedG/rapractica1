@@ -23,14 +23,14 @@
                 ></a-asset-item>
             </a-assets>
 
-                
                 <a-entity
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     scale="0.5036440010873533 0.5036440010873533 0.5036440010873533"
-                    gps-entity-place="latitude: 17.932767; longitude: -97.960991;"
+                    gps-entity-place="latitude: 17.265134954260667; longitude: -97.67795490062225;"
                 ></a-entity>
+                
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
