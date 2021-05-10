@@ -21,8 +21,13 @@
                     id="animated-asset"
                     src="assets/quesillox.glb"
                 ></a-asset-item>
+                <a-mixin id="clickable" onclick="moveTo"></a-mixin>
+                <a-mixin id="bouncy"
+                animation__bounceup="property: position; from: 0 0 0; to: 0 20 0; easing: easeInOutQuad; dur: 500; start-events: click, animationcomplete__bouncedown"
+                animation__bouncedown="property: position; from: 0 20 0; to: 0 0 0; easing: easeInOutQuad; dur: 500; start-events: animationcomplete__bounceup"
+                 ></a-mixin> 
             </a-assets>
-
+            <a-entity id="mdl" mixin=" clickable bouncy">
                 <a-entity
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
@@ -37,7 +42,7 @@
                     scale="0.5036440010873533 0.5036440010873533 0.5036440010873533"
                     gps-entity-place="latitude: 17.932767; longitude: -97.960991;"
                 ></a-entity>
-
+            </a-entity>
             <a-camera gps-camera rotation-reader></a-camera>
             <a-entity hand-tracking-controls="hand: left"></a-entity>
             <a-entity hand-tracking-controls="hand: right"></a-entity>
