@@ -39,6 +39,8 @@
                 ></a-entity>
 
             <a-camera gps-camera rotation-reader></a-camera>
+            <a-entity hand-tracking-controls="hand: left"></a-entity>
+            <a-entity hand-tracking-controls="hand: right"></a-entity>
         </a-scene>
     </body>
 </html>
